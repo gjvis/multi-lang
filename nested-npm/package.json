@@ -1,0 +1,45 @@
+{
+  "name": "tick-tock",
+  "description": "Scheduling of webhooks",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk protect",
+    "start": "node lib",
+    "test": "npm run lint && snyk test && tap test/**/*.test.js",
+    "lint": "jscs `find ./lib -name '*.js'` && jshint `find ./lib -name '*.js'`",
+    "dev": "nodemon",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Snyk/tick-tock.git"
+  },
+  "author": "Josh Emerson",
+  "license": "ISC",
+  "dependencies": {
+    "@snyk/log": "^1.4.0",
+    "agenda": "^0.8.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+    "raven": "^0.12.1",
+    "request": "^2.74.0",
+    "snyk-config": "^1.0.1",
+    "undefsafe": "^1.1.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4",
+    "nodemon": "^1.10.0",
+    "proxyquire": "^1.7.10",
+    "semantic-release": "^4.3.5",
+    "snyk": "^1.18.0",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^3.2.0",
+    "tap": "^5.7.1",
+    "tap-only": "0.0.5",
+    "tape": "^4.6.0"
+  }
+}

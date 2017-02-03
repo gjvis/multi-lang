@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem "rack-cache", "~> 1.2" # Snyk security update
+gem "rack", "~> 1.6.2"

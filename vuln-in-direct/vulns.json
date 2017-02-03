@@ -1,0 +1,48 @@
+[
+    {
+        "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "creationTime": "2016-09-21T12:37:03.000Z",
+        "credit": [
+            "Unknown"
+        ],
+        "description": "## Overview\n[rack-cache](https://rubygems.org/gems/rack-cache) enables HTTP caching for Rack-based applications.\nAffected versions of this gem contain a flaw related to the rubygem caching sensitive HTTP headers. This will result in a weakness that may make it easier for an attacker to gain access to a user's session via a specially crafted header.\n\n## References\n- http://rubysec.com/advisories/CVE-2012-2671\n",
+        "disclosureTime": "2012-06-05T21:00:00.000Z",
+        "from": [
+            "gjvis/vuln-in-direct@gjvis/vuln-in-direct#452526c080fbbbfe2f990523042a36c891082a25",
+            "rack-cache@1.1"
+        ],
+        "id": "SNYK-RUBY-RACKCACHE-20031",
+        "identifiers": {
+            "CVE": [
+                "CVE-2012-2671"
+            ],
+            "CWE": [],
+            "OSVDB": [
+                "OSVDB-83077"
+            ]
+        },
+        "isPatchable": false,
+        "isUpgradable": true,
+        "language": "ruby",
+        "modificationTime": "2016-09-21T12:37:03.000Z",
+        "moduleName": "rack-cache",
+        "name": "rack-cache",
+        "packageManager": "rubygems",
+        "publicationTime": "2012-06-05T21:00:00.000Z",
+        "semver": {
+            "patched": [
+                ">= 1.2"
+            ],
+            "vulnerable": [
+                "< 1.2"
+            ]
+        },
+        "severity": "high",
+        "title": "HTTP Header Caching Weakness",
+        "upgradePath": [
+            false,
+            "rack-cache@1.2"
+        ],
+        "version": "1.1"
+    }
+]
