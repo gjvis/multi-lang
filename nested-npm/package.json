@@ -26,7 +26,7 @@
     "raven": "^0.12.1",
     "request": "^2.74.0",
     "snyk-config": "^1.0.1",
-    "undefsafe": "^1.1.0",
+    "undefsafe": "^2.0.0",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
